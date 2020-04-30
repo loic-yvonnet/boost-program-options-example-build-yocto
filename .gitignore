@@ -1,0 +1,16 @@
+workdir/poky
+workdir/poky/*
+workdir/poky/**
+workdir/project/bitbake-cookerdaemon.log
+workdir/project/cache
+workdir/project/cache/*
+workdir/project/cache/**
+workdir/project/downloads
+workdir/project/downloads/*
+workdir/project/downloads/**
+workdir/project/sstate-cache
+workdir/project/sstate-cache/*
+workdir/project/sstate-cache/**
+workdir/project/tmp
+workdir/project/tmp/*
+workdir/project/tmp/**
