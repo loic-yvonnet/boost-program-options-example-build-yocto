@@ -14,8 +14,9 @@ This repository contains an [application layer](./workdir/project/meta-yoctoboos
 
 The following scripts are available to build and run the solution:
 * **init.sh**: It downloads the CROPS/Poky Docker container, clones the Poky git repository, and starts the CROPS/Poky container. Finally, it bakes the recipe and image. In other words, it downloads all the build tools (e.g. GCC, CMake, etc.) and dependencies (e.g. Docker), it clones the the boost-program-options-example-dev repository](https://github.com/loic-yvonnet/boost-program-options-example-dev), and builds it in the ARM64 image. You can run *run.sh* right after *init.sh*.
-* **destroy.sh**: It deletes the CROPS/Poky Docker container.
+* **destroy.sh**: It deletes the CROPS/Poky Docker container, removes the poky repo, and cleans up all the built artifacts.
 * **start.sh**: It starts the CROPS/Poky Docker container.
 * **compile.sh**: It bakes the recipe and image.
+* **clean.sh**: It cleans up all the artifacts built by the compile.sh script.
 * **run.sh**: It runs QEMU with the built image. You may login with "root". The built application executable is `/usr/bin/yoctoboost`.
 * **stop.sh**: It stops the CROPS/Poky Docker container.
